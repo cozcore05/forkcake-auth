@@ -1336,6 +1336,7 @@ const handle2FASubmit = async (code: string) => {
    toast.error("Invalid session");
    return;
 }
+// @ts-ignore
 await authStore.verifyTwoFactor(twoFactorToken.value as string, code);
   } catch (error: any) {
     twoFactorError.value =

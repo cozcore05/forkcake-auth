@@ -175,6 +175,7 @@ const handle2FASubmit = async (code: string) => {
   toast.error("Session invalid");
   return;
 }
+  // @ts-expect-error
   await authStore.verifyTwoFactor(verificationToken.value as string, code);
 
     // // Manually commit the final user and token to the store

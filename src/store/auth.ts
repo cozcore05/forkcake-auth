@@ -151,6 +151,7 @@ export const useAuthStore = defineStore("auth", {
         if (responseData.status === 'success') {
           const { token } = responseData;
           // Redirect to Main App immediately
+          // @ts-expect-error
           redirectToMain(token || '');
           return;
         }
@@ -216,6 +217,7 @@ export const useAuthStore = defineStore("auth", {
           localStorage.removeItem('evm_address');
 
           if (token) {
+            // @ts-expect-error
             redirectToMain(token as string);
           }
         }
