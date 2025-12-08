@@ -154,7 +154,7 @@ export const useAuthStore = defineStore("auth", {
         if (responseData.status === 'success') {
           const { token } = responseData;
           // Redirect to Main App immediately
-          redirectToMain(token);
+          redirectToMain(token || '');
           return;
         }
 
@@ -239,7 +239,7 @@ export const useAuthStore = defineStore("auth", {
 
     localStorage.removeItem('temp_token');
     localStorage.removeItem('evm_address');
-    redirectToMain(token);
+    redirectToMain(token || '');
     return response.data;
   } catch (error: any) {
     throw error;
