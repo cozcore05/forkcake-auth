@@ -21,17 +21,21 @@ export const appKit = createAppKit({
     {
       // FIX 1: The property for the chain identifier is 'id'.
       id: 1,
-      rpcUrl: 'https://cloudflare-eth.com',
+      rpcUrls: {
+        default: { http: ['https://cloudflare-eth.com'] }
+      },
       name: 'Ethereum',
       nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-      explorerUrl: 'https://etherscan.io'
+      blockExplorers: {
+        default: { name: 'Etherscan', url: 'https://etherscan.io' }
+      }
     },
   ],
   adapters: [
     // FIX 2: The EthersAdapter constructor takes no arguments.
     new EthersAdapter(),
   ],
-  enableDefaultStyles: false,
+  themeMode: 'dark',
 
 });
 

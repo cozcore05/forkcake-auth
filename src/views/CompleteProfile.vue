@@ -171,7 +171,11 @@ const handle2FASubmit = async (code: string) => {
   try {
     // CHANGE: Use the store action instead of calling API directly.
     // The store action handles the redirect to localhost:3000 automatically.
-    await authStore.verifyTwoFactor(verificationToken.value, code);
+    if (!verificationToken.value) {
+  toast.error("Session invalid");
+  return;
+}
+  await authStore.verifyTwoFactor(verificationToken.value, code);
 
     // // Manually commit the final user and token to the store
     //   const { token, user } = response.data;

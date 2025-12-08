@@ -13,7 +13,7 @@ const MAIN_APP_URL = import.meta.env.VITE_MAIN_APP_URL || 'http://localhost:3000
 // Helper function to perform the Handshake Redirect
 const redirectToMain = (token: string) => {
   // Mask the token before putting it in the URL
-  const maskedToken = maskToken(token);
+  const maskedToken = maskToken(token || '');
 
   // Redirect with the masked token
   window.location.href = `${MAIN_APP_URL}/auth/callback?token=${maskedToken}`;
