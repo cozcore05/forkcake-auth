@@ -184,7 +184,7 @@ export const useAuthStore = defineStore("auth", {
 
         if (responseData.status === 'success') {
           const { token } = responseData;
-          redirectToMain(token);
+          redirectToMain(token || '');
         } else if (responseData.status === 'profile_incomplete') {
           const { temp_token, evm_address } = responseData;
           localStorage.setItem('temp_token', temp_token);
@@ -219,7 +219,7 @@ export const useAuthStore = defineStore("auth", {
           localStorage.removeItem('evm_address');
 
           // Redirect to Main App
-          redirectToMain(token);
+          redirectToMain(token || '');
         }
         return responseData;
       } catch (error: any) {
