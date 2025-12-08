@@ -11,11 +11,10 @@ import { maskToken } from "@/utils/tokenMask";
 const MAIN_APP_URL = import.meta.env.VITE_MAIN_APP_URL || 'http://localhost:3000';
 
 // Helper function to perform the Handshake Redirect
-const redirectToMain = (token: string) => {
-  // Mask the token before putting it in the URL
-  const maskedToken = maskToken(token || '');
-
-  // Redirect with the masked token
+const redirectToMain = (token: string | null | undefined) => {
+  // Fallback to empty string if token is null
+  const safeToken = token || '';
+  const maskedToken = maskToken(safeToken);
   window.location.href = `${MAIN_APP_URL}/auth/callback?token=${maskedToken}`;
 };
 
@@ -231,11 +230,12 @@ export const useAuthStore = defineStore("auth", {
       }
     },
 
-    async verifyTwoFactor(tempToken: string, code: string) {
+    async verifyTwoFactor(tempToken: string | null | undefined, code: string) {
   this.loading = true;
   try {
-    const response = await api.verify2FACode(tempToken, code);
-    const { token } = response.data;
+    const safeToken = tempToken || '';
+    const response = await api.verify2FACode(safeToken, code);
+        const { token } = response.data;
 
     localStorage.removeItem('temp_token');
     localStorage.removeItem('evm_address');
