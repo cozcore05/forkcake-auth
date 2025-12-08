@@ -1,0 +1,63 @@
+{
+  "myAds": {
+    "title": "My Ads",
+    "tabs": {
+      "normal": "Normal Ads",
+      "cash": "Cash Ads",
+      "block": "Block Ads",
+      "fiat": "Fiat Ads"
+    },
+    "filters": {
+      "assetType": "Asset/type",
+      "type": "Type",
+      "status": "Status",
+      "createdTime": "Created time",
+      "allAssets": "All assets",
+      "allTypes": "All types",
+      "allStatus": "All status"
+    },
+    "actions": {
+      "activateAll": "Activate all",
+      "takeAllOffline": "Take all offline",
+      "filter": "Filter",
+      "reset": "Reset",
+      "adHistory": "Ad History",
+      "postNow": "Post now"
+    },
+    "emptyState": "You do not have any Ads"
+  },
+  "merchantProfile": {
+    "becomeButton": "Become merchant",
+    "verification": {
+      "email": "Email",
+      "sms": "SMS",
+      "kyc": "KYC"
+    },
+    "stats": {
+      "trades": "30d Trades",
+      "completionRate": "30d Completion Rate",
+      "releaseTime": "Avg. Release Time",
+      "payTime": "Avg. Pay Time",
+      "feedback": "Positive Feedback",
+      "positive": "Positive",
+      "negative": "Negative"
+    },
+    "tabs": {
+      "paymentMethods": "P2P Payment Methods",
+      "feedback": "Feedback",
+      "blockedUsers": "Blocked Users",
+      "follows": "Follows",
+      "restrictions": "Restrictions Removal Center",
+      "notifications": "Notification Settings"
+    },
+    "paymentMethods": {
+      "description": "P2P payment methods: When you sell cryptocurrencies, the payment method added will be displayed to buyer as options to accept payment, please ensure that the account owner's name is consistent with your verified name on Binance. You can add up to 20 payment methods.",
+      "add": "Add a payment method",
+      "name": "Name",
+      "upiId": "UPI ID",
+      "qrCode": "Payment QR code",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  }
+}

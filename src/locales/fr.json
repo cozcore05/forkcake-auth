@@ -1,0 +1,63 @@
+{
+  "myAds": {
+    "title": "Mes Annonces",
+    "tabs": {
+      "normal": "Annonces Normales",
+      "cash": "Annonces en Espèces",
+      "block": "Annonces de Bloc",
+      "fiat": "Annonces Fiat"
+    },
+    "filters": {
+      "assetType": "Actif/type",
+      "type": "Type",
+      "status": "Statut",
+      "createdTime": "Date de création",
+      "allAssets": "Tous les actifs",
+      "allTypes": "Tous les types",
+      "allStatus": "Tous les statuts"
+    },
+    "actions": {
+      "activateAll": "Tout activer",
+      "takeAllOffline": "Tout mettre hors ligne",
+      "filter": "Filtrer",
+      "reset": "Réinitialiser",
+      "adHistory": "Historique des annonces",
+      "postNow": "Publier maintenant"
+    },
+    "emptyState": "Vous n'avez aucune annonce"
+  },
+  "merchantProfile": {
+    "becomeButton": "Devenir marchand",
+    "verification": {
+      "email": "Email",
+      "sms": "SMS",
+      "kyc": "KYC"
+    },
+    "stats": {
+      "trades": "Échanges 30j",
+      "completionRate": "Taux d'achèvement 30j",
+      "releaseTime": "Temps de libération moy.",
+      "payTime": "Temps de paiement moy.",
+      "feedback": "Avis positifs",
+      "positive": "Positif",
+      "negative": "Négatif"
+    },
+    "tabs": {
+      "paymentMethods": "Méthodes de paiement P2P",
+      "feedback": "Avis",
+      "blockedUsers": "Utilisateurs bloqués",
+      "follows": "Abonnements",
+      "restrictions": "Centre de suppression des restrictions",
+      "notifications": "Paramètres de notification"
+    },
+    "paymentMethods": {
+      "description": "Méthodes de paiement P2P : Lorsque vous vendez des cryptomonnaies, la méthode de paiement ajoutée sera affichée à l'acheteur comme options pour accepter le paiement, veuillez vous assurer que le nom du propriétaire du compte correspond à votre nom vérifié sur Binance. Vous pouvez ajouter jusqu'à 20 méthodes de paiement.",
+      "add": "Ajouter une méthode de paiement",
+      "name": "Nom",
+      "upiId": "ID UPI",
+      "qrCode": "Code QR de paiement",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    }
+  }
+}

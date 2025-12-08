@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "ICO Platform",
+    "tagline": "Discover the best ICOs and token sales"
+  },
+  "navigation": {
+    "home": "All Projects",
+    "active": "Active",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "stats": "ICO Stats",
+    "vc": "VC",
+    "farming": "Points Farming"
+  },
+  "filters": {
+    "title": "Filters",
+    "meme": "Meme",
+    "pointsFarming": "Points Farming",
+    "nodeSale": "Node Sale",
+    "tier1VC": "Tier 1 VC",
+    "new": "New",
+    "veryHigh": "Very High",
+    "high": "High",
+    "topRaised": "Top Raised",
+    "topByPreValuation": "Top by Pre-Valuation"
+  },
+  "project": {
+    "category": "Category",
+    "status": "Status",
+    "saleType": "Sale Type",
+    "amount": "Amount",
+    "rating": "Rating",
+    "website": "Website",
+    "whitepaper": "Whitepaper",
+    "social": "Social Media"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "ICO Platform is the leading ICO listing and rating platform, providing comprehensive information about cryptocurrency ICOs.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "connect": "Connect With Us",
+    "subscribe": "Subscribe to our newsletter for the latest updates.",
+    "copyright": "© 2023 ICO Platform. All rights reserved."
+  }
+}

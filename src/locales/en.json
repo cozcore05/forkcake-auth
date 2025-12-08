@@ -1,0 +1,1105 @@
+{
+  "app": {
+    "name": "ICO Platform",
+    "tagline": "Discover the best ICOs and token sales"
+  },
+  "common": {
+    "sending": "Sending...",
+    "logoAlt": "ICO Platform Logo",
+    "search": "Search projects...",
+    "contractAddress": "Contract Address",
+    "viewAll": "View all",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "na": "N/A",
+    "all": "All",
+    "active": "Active",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "today": "Today",
+    "showMore": "Show More",
+    "none": "None",
+    "days": "Days",
+    "appName": "ICO Platform",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "filter": "Filter",
+    "sort": "Sort",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "profile": "Profile",
+    "settings": "Settings",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "subscribe": "Subscribe",
+    "noData": "No Data",
+    "website": "Website",
+    "twitter": "Twitter",
+    "reportIssue": "Report Issue",
+    "name": "Name",
+    "new": "NEW",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}",
+    "noProjectsFound": "No projects found matching your criteria",
+    "allStatuses": "All Statuses",
+    "sortByName": "Sort by Name",
+    "sortByDate": "Sort by Date",
+    "sortByROI": "Sort by ROI",
+    "sortByRaised": "Sort by Raised Amount",
+    "retry": "Retry",
+    "viewDetails": "View Details",
+    "currency": "$",
+    "yesterday": "Yesterday",
+    "high": "HIGH",
+    "tryAgain": "Try Again",
+    "filters": "Filters",
+    "resetFilters": "Reset Filters",
+    "invalidResponse": "Invalid API response format",
+    "fetchError": "Failed to load data. Please try again.",
+    "searchError": "Failed to search. Please try again.",
+    "refreshError": "Failed to refresh data. Please try again."
+  },
+  "profile": {
+    "title": "User Profile",
+    "description": "Manage your account settings and view your investments",
+    "memberSince": "Member Since",
+    "status": "Status",
+    "role": "Role",
+    "active": "Active",
+    "personalInfo": "Personal Information",
+    "name": "Full Name",
+    "email": "Email Address",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "profileSaved": "Profile updated successfully",
+    "notificationsSaved": "Notification preferences saved",
+    "yourInvestments": "Your Investments",
+    "noInvestments": "No investments yet",
+    "exploreProjects": "Start investing in promising ICO projects",
+    "exploreICOs": "Explore ICOs",
+    "savedProjects": "Saved Projects",
+    "noFavorites": "No favorite projects",
+    "startSaving": "Start saving projects you're interested in",
+    "browseProjects": "Browse Projects",
+    "notificationPreferences": "Notification Preferences",
+    "totalInvestors": "Total Investors",
+    "passwordFieldsRequired": "All password fields are required",
+    "saveFailed": "Failed to save profile",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordUpdated": "Password updated successfully",
+    "newPasswordSameAsCurrent": "New password cannot be the same as current password",
+    "totalUsers": "Total Users",
+    "networkInfo": "Network Information",
+    "totalProjects": "Total Projects",
+    "notifications": {
+      "newICOs": "New ICO Announcements",
+      "newICOsDesc": "Get notified when new ICOs are listed on the platform",
+      "investmentUpdates": "Investment Updates",
+      "investmentUpdatesDesc": "Receive updates about your investments",
+      "priceAlerts": "Price Alerts",
+      "priceAlertsDesc": "Get notified about significant price changes",
+      "newsletter": "Weekly Newsletter",
+      "newsletterDesc": "Receive our weekly newsletter with market insights"
+    
+    },
+    "tabs": {
+      "account": "Account",
+      "investments": "Investments",
+      "favorites": "Favorites",
+      "notifications": "Notifications"
+    }
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to access your account",
+    "email": "Email Address",
+    "emailPlaceholder": "your.email@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+    "trustDevice": "Trust this device",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing in...",
+    "orContinueWith": "Or continue with",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register now",
+    "invalidCredentials": "Invalid email or password",
+    "loginSuccess": "Login successful! Redirecting...",
+    "loginFailed": "Login failed",
+    "accountLocked": "Your account has been locked. Please contact support.",
+    "twoFactorRequired": "Two-factor authentication required",
+    "enterCode": "Enter the code sent to your device",
+    "resendCode": "Resend code",
+    "verifyCode": "Verify",
+    "finalizingConnection": "Finalizing wallet connection...",
+    "socialLoginNotImplemented": "Social login is currently being set up. Please use email or wallet.",
+    "socialLoginFailed": "Social login failed. Please try again.",
+    "emailLogin": "Email",
+    "walletLogin": "Wallet",
+    "magicLink": "Magic Link",
+    "walletDescription": "Connect with your cryptocurrency wallet to access your account securely.",
+    "walletConnected": "Wallet connected successfully!",
+    "walletConnectionFailed": "Failed to connect wallet",
+    "walletNotDetected": "Wallet extension not detected. Please install it first.",
+    "magicLinkDescription": "Receive a secure login link via email. No password needed.",
+    "sendMagicLink": "Send Magic Link",
+    "sendingLink": "Sending...",
+    "magicLinkSent": "Login link sent! Check your email inbox.",
+    "magicLinkFailed": "Failed to send magic link",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordWeak": "Weak",
+    "passwordFair": "Fair",
+    "passwordGood": "Good",
+    "passwordStrong": "Strong",
+    "rememberMeTooltip": "Keeps you logged in on this device for 30 days. Not recommended for shared devices.",
+    "trustDeviceTooltip": "Skip security verification when logging in from this device in the future.",
+    "securityInfo": "Security Information",
+    "securityNotice": "For your security, please ensure:",
+    "securityTip1": "Always verify you're on the official ICO Platform website",
+    "securityTip2": "Never share your password or security codes with anyone",
+    "securityTip3": "Enable two-factor authentication for additional security",
+    "socialLoginTooltip": "Sign in with {provider}",
+    "socialLogin": {
+      "google": "Continue with Google",
+      "twitter": "Continue with Twitter",
+      "github": "Continue with GitHub"
+    }
+  },
+  "userAccount": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "rewards": "Rewards",
+    "studio": "Studio",
+    "profile": "Profile",
+    "resources": "Resources",
+    "settings": "Settings",
+    "support": "Support",
+    "expand": "Expand",
+    "logout": "Logout",
+    "notifications": "Notifications",
+    "viewProfile": "View Profile",
+    "accountSettings": "Account Settings",
+    "myProjects": "My Projects",
+    "myInvestments": "My Investments",
+    "referrals": "Referrals",
+    "security": "Security",
+    "preferences": "Preferences"
+  },
+  "viewToggle": {
+    "tableView": "Table View",
+    "cardView": "Card View",
+    "switchView": "Switch View"
+  },
+  "nav": {
+    "home": "All Projects",
+    "active": "Active",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "stats": "ICO Stats",
+    "vc": "VC",
+    "farming": "Points Farming",
+    "about": "About Us",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "navigation": {
+    "home": "All Projects",
+    "explore": "Explore",
+    "trending": "Trending",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "favorites": "Favorites",
+    "studio": "Studio",
+    "account": "Account",
+    "active": "Active",
+    "stats": "ICO Stats",
+    "vc": "VC Firms",
+    "farming": "Points Farming",
+    "exchanges": "Exchanges",
+    "wallets": "Wallets",
+    "chains": "Chains",
+    "auditors": "Auditors",
+    "developers": "Developers"
+  },
+  "sidebar": {
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "menu": "Menu",
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "activePage": {
+    "title": "Active ICOs",
+    "description": "Discover the most promising active token sales and investment opportunities",
+    "table": {
+      "project": "Project",
+      "round": "Round",
+      "totalRaised": "Raised",
+      "preValuation": "Pre-Val",
+      "investors": "Investors",
+      "ecosystem": "Ecosystem",
+      "category": "Category",
+      "date": "Date"
+    }
+  },
+  "upcomingPage": {
+    "title": "Upcoming ICOs",
+    "description": "Discover upcoming ICO projects and prepare for their token sales.",
+    "table": {
+      "project": "Project",
+      "round": "Round",
+      "totalRaised": "Target",
+      "preValuation": "Pre-Val",
+      "investors": "Investors",
+      "ecosystem": "Ecosystem",
+      "category": "Category",
+      "date": "Start Date"
+    }
+  },
+  "endedPage": {
+    "title": "Ended ICOs",
+    "description": "Browse completed token sales and analyze their performance and outcomes",
+    "table": {
+      "project": "Project",
+      "round": "Round",
+      "totalRaised": "Raised",
+      "preValuation": "Pre-Val",
+      "investors": "Investors",
+      "ecosystem": "Ecosystem",
+      "category": "Category",
+      "date": "Starting"
+    },
+    "filters": {
+      "all": "All",
+      "successful": "Successful",
+      "failed": "Failed"
+    },
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "highestRaised": "Highest Raised",
+      "lowestRaised": "Lowest Raised"
+    }
+  },
+  "filters": {
+    "title": "Filters",
+    "popular": "Popular",
+    "ecosystems": "Ecosystems",
+    "allEcosystems": "All Ecosystems",
+    "launchpads": "Launchpads",
+    "allLaunchpads": "All Launchpads",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "meme": "Meme",
+    "pointsFarming": "Points Farming",
+    "nodeSale": "Node Sale",
+    "tier1VC": "Tier 1 VC",
+    "new": "New",
+    "veryHigh": "Very High",
+    "high": "High",
+    "topRaised": "Top Raised",
+    "topByPreValuation": "Top by Pre-Valuation",
+    "chains": "Chains",
+    "clearAll": "Clear Filters",
+    "toggleFilters": "Toggle filters panel",
+    "coinlist": "Coinlist",
+    "apply": "Apply Filters"
+  },
+  "project": {
+    "category": "Category",
+    "status": "Status",
+    "saleType": "Sale Type",
+    "amount": "Amount",
+    "rating": "Rating",
+    "website": "Website",
+    "whitepaper": "Whitepaper",
+    "social": "Social Media",
+    "overview": "OVERVIEW",
+    "roadmap": "ROADMAP",
+    "currentAndPast": "CURRENT AND PAST",
+    "activities": "ACTIVITIES",
+    "past": "PAST",
+    "investors": "INVESTORS",
+    "fundName": "Fund Name",
+    "type": "Type",
+    "tier": "Tier",
+    "stage": "Stage",
+    "noInvestors": "No investors found",
+    "totalRaised": "Total Raised",
+    "preValuation": "Pre-Valuation",
+    "inRounds": "In 2 rounds",
+    "twitterPerformance": "Twitter Performance",
+    "topPointsFarming": "TOP POINTS FARMING ACTIVITIES BY TVL CHANGE",
+    "similarProjects": "SIMILAR PROJECTS",
+    "activity": "Activity",
+    "tvlChange": "TVL Change (24h / TVL)",
+    "earnRewards": "Earn Rewards",
+    "trendingToday": "Trending Today",
+    "topFollowers": "Top Followers",
+    "lastUpdated": "Last Updated",
+    "followers": "Followers",
+    "calculated": "Calculated",
+    "rounds": "Rounds",
+    "tgeAndDistribution": "TGE and Distribution",
+    "tokenLaunch": "Token Launch",
+    "airdrop": "Airdrop",
+    "fundingRound": "Funding Round",
+    "private": "Private",
+    "topNftIco": "Top NFT ICO Activities",
+    "collectionFdv": "Collection FDV",
+    "projectDetails": "Project Details",
+    "screenshots": "Screenshots",
+    "showMore": "Show More",
+    "hide": "Hide",
+    "dropstash": "Dropstash",
+    "tvl": "TVL",
+    "timeLeft": "Time Left",
+    "timeUntil": "Time Until",
+    "saleDate": "Sale Date",
+    "performance": "Performance",
+    "change": "Change",
+    "project": "Project",
+    "round": "Round",
+    "ecosystem": "Ecosystem",
+    "categories": "Categories",
+    "date": "Date",
+    "portfolio": "PORTFOLIO",
+    "stats": "STATS",
+    "totalInvestments": "Total Investments",
+    "leadInvestments": "Lead Investments",
+    "symbol_label": "Symbol",
+    "price": "Price",
+    "totalSupply": "Total Supply",
+    "circulatingSupply": "Circulating Supply",
+    "screenshot": "Screenshot",
+    "tokenInfo": "Token Info",
+    "tokenDetails": "Token Details",
+    "statuses": {
+      "active": "Active",
+      "upcoming": "Upcoming",
+      "ended": "Ended"
+    }
+  },
+  "ico": {
+    "price": "Price",
+    "hardCap": "Hard Cap",
+    "raised": "Raised",
+    "starts": "Starts",
+    "ends": "Ends",
+    "roi": "ROI",
+    "details": "View Details",
+    "participate": "Participate",
+    "investors": "Investors",
+    "viewProject": "View Project",
+    "totalInvestors": "Total Investors",
+    "tokenPrice": "Token Price",
+    "tokenSale": "Token Sale",
+    "tokenDistribution": "Token Distribution",
+    "saleEnds": "Sale Ends",
+    "saleStarts": "Sale Starts",
+    "status": "Status"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "ICO Platform is the leading ICO listing and rating platform, providing comprehensive information about cryptocurrency ICOs.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "connect": "Connect With Us",
+    "subscribe": "Subscribe to our newsletter for the latest updates.",
+    "copyright": "© {year} ICO Platform. All rights reserved.",
+    "followUs": "Follow Us",
+    "stayUpdated": "Stay Updated",
+    "emailPlaceholder": "Your email address",
+    "subscribeButton": "Subscribe",
+    "contactUs": "Contact Us",
+    "address": "123 Blockchain Street, Crypto City",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@icoplatform.com"
+  },
+  "chains": {
+    "ethereum": "Ethereum",
+    "binance": "Binance Smart Chain",
+    "solana": "Solana",
+    "polygon": "Polygon",
+    "avalanche": "Avalanche",
+    "arbitrum": "Arbitrum",
+    "optimism": "Optimism",
+    "base": "Base"
+  },
+  "launchpads": {
+    "gate": "Gate.io",
+    "dao": "DAO Maker",
+    "poolz": "Poolz",
+    "binance": "Binance",
+    "polkastarter": "Polkastarter",
+    "seedify": "Seedify",
+    "bybit": "Bybit",
+    "kucoin": "KuCoin"
+  },
+  "categories": {
+    "meme": "Meme",
+    "infrastructure": "Infrastructure",
+    "gamefi": "GameFi",
+    "ai": "Artificial Intelligence (AI)",
+    "defi": "DeFi",
+    "liquidstaking": "Liquid Staking Protocols",
+    "blockchain": "Blockchain Service",
+    "gaming": "Gaming",
+    "platform": "Platform",
+    "metaverse": "Metaverse",
+    "nft": "NFT",
+    "dao": "DAO",
+    "privacy": "Privacy",
+    "social": "Social",
+    "exchange": "Exchange"
+  },
+  "tiers": {
+    "tier1": "Tier 1",
+    "veryHigh": "Very High",
+    "high": "High",
+    "topRaised": "Top Raised"
+  },
+  "active": {
+    "title": "Active ICOs",
+    "noProjects": "No active ICOs found matching your filters."
+  },
+  "upcoming": {
+    "title": "Upcoming ICOs",
+    "noProjects": "No upcoming ICOs found matching your filters."
+  },
+  "ended": {
+    "title": "Ended ICOs",
+    "noProjects": "No ended ICOs found matching your filters."
+  },
+  "homePage": {
+    "sponsoredProjects": "Sponsored Projects",
+    "featuredProjects": "Featured Projects",
+    "noActiveProjects": "No active projects match your filters",
+    "noUpcomingProjects": "No upcoming projects match your filters",
+    "noEndedProjects": "No ended projects match your filters",
+    "viewAllActive": "View all Active ICOs",
+    "viewAllUpcoming": "View all Upcoming ICOs",
+    "viewAllEnded": "View all Ended ICOs"
+  },
+  "projectForm": {
+    "editProject": "Edit Project",
+    "addNewProject": "Add New Project",
+    "sections": {
+      "basicInfo": "Basic Information",
+      "media": "Media",
+      "saleInfo": "Sale Information",
+      "links": "Links",
+      "description": "Description",
+      "investors": "Investors",
+      "performance": "Performance",
+      "roiIndicators": "ROI Indicators"
+    },
+    "fields": {
+      "projectName": "Project Name",
+      "ticker": "Ticker",
+      "category": "Category",
+      "status": "Status",
+      "chain": "Chain",
+      "badge": "Badge",
+      "rating": "Rating",
+      "preValuation": "Pre-Valuation",
+      "logoUrl": "Logo URL",
+      "bannerUrl": "Banner URL",
+      "saleType": "Sale Type",
+      "amount": "Amount",
+      "timeLeft": "Time Left",
+      "timeUntil": "Time Until",
+      "saleDate": "Sale Date",
+      "website": "Website",
+      "twitter": "Twitter",
+      "telegram": "Telegram",
+      "whitepaper": "Whitepaper",
+      "description": "Description",
+      "additionalInfo": "Additional Info",
+      "includePerformanceData": "Include performance data",
+      "percentage": "Percentage",
+      "change": "Change",
+      "additionalFlags": "Additional Flags"
+    },
+    "placeholders": {
+      "selectCategory": "Select category",
+      "selectStatus": "Select status",
+      "selectChain": "Select chain",
+      "selectRating": "Select rating",
+      "preValuation": "$10M",
+      "saleType": "IDO, Presale, Token Sale, etc.",
+      "timeLeft": "IDO, Presale, Token Sale, etc.",
+      "amount": "$1.5M or No Data",
+      "timeUntil": "in 46h, Apr 24 2025, etc.",
+      "saleDate": "Apr 3, 2025",
+      "website": "https://example.com",
+      "twitter": "https://twitter.com/example",
+      "telegram": "https://t.me/example",
+      "whitepaper": "https://example.com/whitepaper.pdf",
+      "roiValue": "+7"
+    },
+    "statusOptions": {
+      "active": "Active",
+      "upcoming": "Upcoming",
+      "ended": "Ended"
+    },
+    "badgeOptions": {
+      "none": "None",
+      "new": "New",
+      "hot": "Hot",
+      "high": "High",
+      "veryHigh": "Very High"
+    },
+    "ratingOptions": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "veryHigh": "Very High"
+    },
+    "colorOptions": {
+      "green": "Green",
+      "red": "Red",
+      "gray": "Gray"
+    },
+    "flags": {
+      "hasTier1VC": "Has Tier 1 VC",
+      "isTopRaised": "Top Raised",
+      "isNodeSale": "Node Sale",
+      "hasPointsFarming": "Points Farming"
+    },
+    "actions": {
+      "addInvestor": "Add Investor",
+      "removeInvestor": "Remove Investor",
+      "addRoiIndicator": "Add ROI Indicator",
+      "removeRoiIndicator": "Remove ROI Indicator",
+      "cancel": "Cancel",
+      "createProject": "Create Project",
+      "updateProject": "Update Project"
+    },
+    "validation": {
+      "requiredFields": "Please fill in all required fields"
+    },
+    "defaults": {
+      "noData": "No Data"
+    },
+    "logoPreview": "Logo preview"
+  },
+  "modal": {
+    "close": "Close"
+  },
+  "header": {
+    "studio": "Studio",
+    "theme": "Toggle Theme",
+    "language": "Change Language"
+  },
+  "projectCard": {
+    "noData": "No Data",
+    "viewDetails": "View Details",
+    "timeLeft": "Time Left",
+    "timeUntil": "Time Until",
+    "saleDate": "Sale Date"
+  },
+  "vc": {
+    "title": "VC Firms",
+
+    "searchPlaceholder": "Search VC firms...",
+    "filterBy": "Filter By",
+    "project": "Project",
+    "tier": "Tier",
+    "avgRoi": "Avg ROI",
+    "lastInvestment": "Last Investment",
+    "portfolio": "Portfolio",
+    "binanceListed": "Binance Listed",
+    "unicorns": "Unicorns",
+    "twitterPerformance": "Twitter Performance",
+    "noVCFirms": "No VC Firms Found",
+    "noVCFirmsDescription": "There are no VC firms available at the moment.",
+    "noSearchResults": "No VC firms match your search criteria.",
+    "noVCDetail": "No VC Firm Details",
+    "vcDetailNotFound": "The requested VC firm details could not be found.",
+    "focusAreas": "Focus Areas",
+    "coInvestors": "Co-Investors",
+    "coInvestments": "Co-Investments",
+    "topInvestments": "Top Investments",
+    "type": "Type",
+    "round": "Round",
+    "totalRaised": "Total Raised",
+    "preValuation": "Pre-Valuation",
+    "investors": "Investors",
+    "ecosystem": "Ecosystem",
+    "categories": "Categories",
+    "date": "Date",
+    "fundingRounds": {
+      "title": "Funding Rounds",
+      "description": "Explore the latest funding rounds in the crypto and blockchain space",
+      "noRounds": "No funding rounds found",
+      "noRoundsDescription": "There are no funding rounds matching your criteria",
+      "table": {
+        "project": "Project",
+        "round": "Round",
+        "totalRaised": "Total Raised",
+        "preValuation": "Pre-Valuation",
+        "investors": "Investors",
+        "ecosystem": "Ecosystem",
+        "categories": "Categories",
+        "date": "Date"
+      }
+    },
+    "list": {
+      "title": "VC List",
+      "description": "Explore top venture capital firms in the crypto and blockchain space"
+    }
+  },
+  "stats": {
+    "title": "ICO Statistics",
+    "description": "Comprehensive statistics and metrics for cryptocurrency ICOs and token sales",
+    "totalProjects": "Total Projects",
+    "totalRaised": "Total Raised",
+    "activeProjects": "Active Projects",
+    "avgRoi": "Average ROI",
+    "topProjects": "Top Projects",
+    "byChain": "By Chain",
+    "projects": "Projects",
+    "raised": "Raised",
+    "topPerformers": "Top Performers",
+    "recentlyAdded": "Recently Added",
+    "marketOverview": "Market Overview",
+    "columns": {
+      "price": "Price",
+      "volume24h": "Volume 24h",
+      "fdv": "FDV",
+      "marketCap": "Market Cap",
+      "fundingPrice": "Funding Price",
+      "roi": "ROI",
+      "tgeDate": "TGE Date"
+    },
+    "filters": {
+      "allChains": "All Chains",
+      "allCategories": "All Categories",
+      "allStatuses": "All Statuses",
+      "byRoi": "By ROI",
+      "byRaised": "By Raised",
+      "byDate": "By Date"
+    },
+    "pagination": {
+      "showing": "Showing",
+      "of": "of",
+      "entries": "entries",
+      "next": "Next",
+      "previous": "Previous"
+    },
+    "noData": "No data available",
+    "lastUpdated": "Last updated",
+    "viewDetails": "View Details",
+    "viewAll": "View All",
+    "marketTrends": "Market Trends",
+    "investorActivity": "Investor Activity",
+    "chainDistribution": "Chain Distribution"
+  },
+  "icoStats": {
+    "title": "ICO Statistics",
+    "description": "Track performance metrics for Initial Coin Offerings and token sales",
+    "totalProjects": "Total Projects",
+    "activeProjects": "Active Projects",
+    "avgROI": "Average ROI",
+    "totalRaised": "Total Raised",
+    "projectColumn": "Project",
+    "statusColumn": "Status",
+    "priceColumn": "Price",
+    "roiColumn": "ROI",
+    "raisedColumn": "Raised",
+    "dateColumn": "TGE Date",
+    "exportData": "Export Data",
+    "refreshData": "Refresh Data"
+  },
+  "pointsFarming": {
+    "title": "Points Farming",
+    "description": "Explore projects offering points farming opportunities and track their performance",
+    "noProjects": "No points farming projects found matching your criteria",
+    "filters": {
+      "tvl": "TVL",
+      "new": "New",
+      "tier1VC": "Tier 1 VC",
+      "showEnded": "Show Ended",
+      "asset": "Select Asset",
+      "chain": "Select Chain"
+    },
+    "table": {
+      "project": "Project",
+      "tvl": "TVL",
+      "tvlChart": "TVL Chart",
+      "assetFarmChain": "Chain",
+      "sinceStart": "Start",
+      "tge": "TGE",
+      "investments": "Investments"
+    },
+    "stats": {
+      "totalTVL": "Total TVL",
+      "activeProjects": "Active Projects",
+      "avgDuration": "Avg. Duration",
+      "totalInvestment": "Total Investment"
+    },
+    "tokenTypes": {
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "binance": "Binance",
+      "avalanche": "Avalanche",
+      "arbitrum": "Arbitrum",
+      "optimism": "Optimism",
+      "base": "Base",
+      "polygon": "Polygon"
+    }
+  },
+  "roi": {
+    "veryHigh": "Very High",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "negative": "Negative",
+    "tooltip": "Return on Investment compared to initial token price"
+  },
+  "errors": {
+    "dataFetch": "Failed to fetch data",
+    "invalidProject": "Invalid project ID",
+    "networkError": "Network error, please check your connection",
+    "serverError": "Server error, please try again later"
+  },
+  "actions": {
+    "viewProject": "View Project",
+    "investNow": "Invest Now",
+    "addToWatchlist": "Add to Watchlist",
+    "removeFromWatchlist": "Remove from Watchlist",
+    "share": "Share",
+    "export": "Export",
+    "print": "Print"
+  },
+  "dates": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week",
+    "thisMonth": "Last Month",
+    "lastMonth": "Last Month",
+    "thisYear": "This Year",
+    "format": {
+      "short": "MMM D, YYYY",
+      "long": "MMMM D, YYYY",
+      "time": "h:mm A"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "lastUpdatedDate": "April 16, 2025",
+    "introduction": {
+      "title": "Introduction",
+      "description": "This Privacy Policy describes how ICO Platform collects, uses, and discloses your personal information when you use our website and services. By using our platform, you agree to the collection and use of information in accordance with this policy."
+    },
+    "informationCollection": {
+      "title": "Information We Collect",
+      "description": "We collect several different types of information for various purposes to provide and improve our service to you:",
+      "personalInfo": "Personal Information: Email address, name, phone number, address, and other information you provide when creating an account or using our services.",
+      "usageData": "Usage Data: Information on how you access and use our website, including your IP address, browser type, pages visited, time spent on pages, and other diagnostic data.",
+      "cookies": "Cookies and Tracking Data: We use cookies and similar tracking technologies to track activity on our website and hold certain information to improve your experience."
+    },
+    "useOfInformation": {
+      "title": "How We Use Your Information",
+      "description": "We use the collected information for various purposes, including:",
+      "provideService": "To provide and maintain our service, including monitoring the usage of our service.",
+      "improveService": "To improve our website and services by analyzing how users interact with our platform.",
+      "communications": "To communicate with you, including sending you updates, security alerts, and support messages.",
+      "compliance": "To comply with legal obligations and enforce our terms and policies."
+    },
+    "dataSharing": {
+      "title": "Sharing Your Information",
+      "description": "We may share your personal information in the following situations:",
+      "serviceProviders": "With service providers who perform services on our behalf, such as hosting, data analysis, and customer service.",
+      "businessTransfers": "In connection with a business transaction such as a merger, acquisition, or asset sale.",
+      "legalRequirements": "When required by law, such as in response to a subpoena or similar legal process."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "description": "Depending on your location, you may have certain rights regarding your personal information, including:",
+      "access": "The right to access the personal information we have about you.",
+      "rectification": "The right to request correction of inaccurate information.",
+      "deletion": "The right to request deletion of your personal information.",
+      "restriction": "The right to request restriction of processing of your personal information.",
+      "dataPortability": "The right to receive a copy of your personal information in a structured, machine-readable format.",
+      "objection": "The right to object to our processing of your personal information."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "We use cookies to enhance your experience on our website. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service."
+    },
+    "thirdPartyLinks": {
+      "title": "Links to Other Websites",
+      "description": "Our service may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+    },
+    "childrenPrivacy": {
+      "title": "Children's Privacy",
+      "description": "Our service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us."
+    },
+    "changes": {
+      "title": "Changes to This Privacy Policy",
+      "description": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. You are advised to review this Privacy Policy periodically for any changes."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about this Privacy Policy, please contact us:",
+      "email": "Email",
+      "address": "123 Blockchain Street, Crypto City, CC 12345"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "lastUpdatedDate": "April 16, 2025",
+    "introduction": {
+      "title": "Introduction",
+      "description": "Welcome to ICO Platform. These Terms of Service govern your use of our website and services. By accessing or using our platform, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the service."
+    },
+    "definitions": {
+      "title": "Definitions",
+      "service": "Service",
+      "serviceDefinition": "The ICO Platform website and all related services provided by us.",
+      "user": "User",
+      "userDefinition": "Any individual or entity that accesses or uses our Service.",
+      "company": "Company",
+      "companyDefinition": "ICO Platform, Inc., the provider of the Service.",
+      "website": "Website",
+      "websiteDefinition": "The ICO Platform website located at www.icoplatform.com."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": "By accessing or using our Service, you confirm that you have read, understood, and agree to be bound by these Terms of Service. If you are using the Service on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms."
+    },
+    "userAccounts": {
+      "title": "User Accounts",
+      "description": "When you create an account with us, you must provide accurate, complete, and current information. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.",
+      "accuracy": "You are responsible for maintaining the accuracy of your account information.",
+      "security": "You are responsible for safeguarding the password used to access the Service and for any activities or actions under your password.",
+      "termination": "We reserve the right to terminate or suspend your account immediately, without prior notice or liability, for any reason."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "description": "The Service and its original content, features, and functionality are and will remain the exclusive property of ICO Platform and its licensors. The Service is protected by copyright, trademark, and other laws. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of ICO Platform."
+    },
+    "userContent": {
+      "title": "User Content",
+      "description": "Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content you post on or through the Service.",
+      "ownership": "You retain any and all of your rights to any content you submit, post, or display on or through the Service.",
+      "license": "By posting content on or through the Service, you grant us the right to use, modify, publicly perform, publicly display, reproduce, and distribute such content on and through the Service.",
+      "restrictions": "You agree not to post content that is illegal, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libelous, invasive of another's privacy, or otherwise objectionable."
+    },
+    "prohibitedActivities": {
+      "title": "Prohibited Activities",
+      "description": "You may not access or use the Service for any purpose other than that for which we make the Service available. The following activities are prohibited:",
+      "illegal": "Engaging in any activity that violates any applicable law or regulation.",
+      "infringement": "Infringing upon or violating our intellectual property rights or the intellectual property rights of others.",
+      "harmful": "Attempting to interfere with, compromise the system integrity or security, or decipher any transmissions to or from the servers running the Service.",
+      "impersonation": "Impersonating or attempting to impersonate the Company, a Company employee, another user, or any other person or entity.",
+      "automation": "Using any robot, spider, or other automatic device, process, or means to access the Service for any purpose."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "description": "Your use of the Service is at your sole risk. The Service is provided on an 'AS IS' and 'AS AVAILABLE' basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance."
+    },
+    "limitation": {
+      "title": "Limitation of Liability",
+      "description": "In no event shall ICO Platform, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service."
+    },
+    "indemnification": {
+      "title": "Indemnification",
+      "description": "You agree to defend, indemnify, and hold harmless ICO Platform and its licensee and licensors, and their employees, contractors, agents, officers, and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses, resulting from or arising out of your use and access of the Service."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "description": "These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which our company is registered, without regard to its conflict of law provisions."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "description": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about these Terms, please contact us:",
+      "email": "Email",
+      "address": "123 Blockchain Street, Crypto City, CC 12345"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": {
+      "title": "Our Mission",
+      "description1": "At ICO Platform, our mission is to provide transparent, comprehensive, and reliable information about cryptocurrency Initial Coin Offerings (ICOs) and token sales to help investors make informed decisions.",
+      "description2": "We strive to be the most trusted source of ICO data by maintaining the highest standards of accuracy, integrity, and impartiality in our listings and analyses."
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "research": {
+        "title": "In-depth Research",
+        "description": "We conduct thorough research on each ICO project, analyzing team backgrounds, technology, tokenomics, and market potential."
+      },
+      "listing": {
+        "title": "Comprehensive Listings",
+        "description": "We maintain an up-to-date database of active, upcoming, and past ICOs with detailed information on each project."
+      },
+      "analytics": {
+        "title": "Market Analytics",
+        "description": "We provide data-driven insights and analytics to help you understand market trends and performance metrics."
+      },
+      "community": {
+        "title": "Community Building",
+        "description": "We foster a community of informed investors and blockchain enthusiasts through educational content and forums."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "roles": {
+        "founder": "Founder & CEO",
+        "cto": "CTO & Lead Developer",
+        "research": "Head of Research"
+      }
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "description": "Have questions or feedback? We'd love to hear from you. Reach out to our team for assistance with any inquiries.",
+      "button": "Get in Touch"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "getInTouch": "Get in Touch",
+    "description": "Have questions, feedback, or need assistance? Fill out the form below and our team will get back to you as soon as possible.",
+    "contactInfo": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "followUs": "Follow Us",
+    "findUs": "Find Us",
+    "backToAbout": "Back to About Us",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully. We'll get back to you soon!",
+      "error": "There was an error sending your message. Please try again."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "q1": "How do I list my ICO project on your platform?",
+        "q2": "How do you verify the information about ICO projects?",
+        "q3": "Do you offer advertising or promotional services?",
+        "q4": "How can I report inaccurate information about a project?"
+      },
+      "answers": {
+        "a1": "To list your ICO project, please use the 'Submit Project' form in our Studio section. Our team will review your submission and may request additional information before publishing.",
+        "a2": "We have a dedicated research team that verifies project information through multiple sources, including official documentation, team interviews, and third-party audits. We strive for accuracy but always encourage users to conduct their own research.",
+        "a3": "Yes, we offer various promotional packages for ICO projects. Please contact our marketing team at marketing@icoplatform.com for more information about our advertising options.",
+        "a4": "If you notice any inaccurate information about a project, please use our 'Report Issue' feature on the project page or contact us directly. We appreciate community feedback to maintain data accuracy."
+      }
+    }
+  },
+  "debug": {
+    "cacheCleared": "Cache cleared. Refreshing data...",
+    "allCacheCleared": "All cache cleared successfully",
+    "dataSource": "Data Source",
+    "cacheStatus": "Cache Status",
+    "refreshData": "Refresh Data",
+    "clearCache": "Clear Cache",
+    "clearAllCache": "Clear All Cache",
+    "refreshAllData": "Refresh All Data",
+    "debugInfo": "Debug Info",
+    "hide": "Hide",
+    "show": "Show"
+  },
+    "signup": {
+    "signupTab": "Sign Up",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "agreeToTerms": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "signupButton": "Create Account",
+    "signingUp": "Creating account...",
+    "signupSuccess": "Account created successfully!",
+    "signupFailed": "Registration failed. Please try again.",
+    "nameRequired": "Full name is required",
+    "nameTooShort": "Name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "confirmPasswordRequired": "Please confirm your password",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordWeak": "Weak",
+    "passwordFair": "Fair",
+    "passwordGood": "Good",
+    "passwordStrong": "Strong",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Sign in"
+    },
+
+    "forgotPassword": {
+    "title": "Reset Your Password",
+    "description1": "Enter your email to receive a security code.",
+    "description2": "Enter the code and set your new password.",
+    "description3": "Your password has been successfully reset.",
+    "step1": "Email",
+    "step2": "Code",
+    "step3": "Reset",
+    "email": "Email Address",
+    "securityCode": "Security Code",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "sendOTP": "Send Security Code",
+    "resetButton": "Reset Password",
+    "reseting": "Reseting...",
+    "resendCode": "Resend Code",
+    "resendIn": "Resend in",
+    "backToLogin": "Back to Login",
+    "codeSent": "A security code has been sent to your email.",
+    "codeResent": "New security code sent!",
+    "sendFailed": "Failed to send code. Check your email.",
+    "verificationFailed": "Invalid or expired security code.",
+    "resetSuccess": "Password reset successful! You are now logged in.",
+    "resetFailed": "Password reset failed.",
+    "passwordsDoNotMatch": "New passwords do not match.",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "verifyButton": "Verify Code",       
+    "hintEnterCode": "Enter the security code to unlock password fields.",
+    "codeVerified": "Security code verified! You can now set your new password."
+  }
+}

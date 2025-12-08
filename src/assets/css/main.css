@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FORCE immediate text rendering with system fonts */
+/* This ensures the user sees text INSTANTLY, then it updates to Inter later */
+/* @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Inter');
+} */
+
+:root {
+  /* LIGHT MODE */
+  /* Darkened from Blue-500 to Blue-600/700 for better white-text contrast */
+  --color-primary: 29 78 216; /* Blue-700 */
+  --color-primary-foreground: 255 255 255;
+
+  --apkt-font-family: "Arial, sans-serif" !important;
+
+  /* HIGH CONTRAST TEXT: Darkened grays significantly */
+  --color-secondary: 55 65 81; /* Gray-700 */
+  --color-secondary-foreground: 255 255 255;
+
+  --color-background: 255 255 255;
+  --color-foreground: 15 23 42; /* Slate-900 */
+
+  --color-muted: 241 245 249; /* Slate-100 */
+  --color-muted-foreground: 71 85 105; /* Slate-600 */
+
+  --color-card: 255 255 255;
+  --color-card-foreground: 15 23 42;
+
+  --color-border: 226 232 240; /* Slate-200 */
+
+  --color-success: 21 128 61; /* Green-700 */
+  --color-warning: 161 98 7;  /* Yellow-700 */
+  --color-danger: 185 28 28;  /* Red-700 */
+  --color-info: 29 78 216;    /* Blue-700 */
+}
+
+.dark {
+  /* DARK MODE */
+  --color-primary: 59 130 246; /* Blue-500 (Keep bright in dark mode) */
+  --color-primary-foreground: 255 255 255;
+
+  --color-secondary: 156 163 175; /* Gray-400 */
+  --color-secondary-foreground: 255 255 255;
+
+  --color-background: 17 24 39; /* Gray-900 */
+  --color-foreground: 255 255 255;
+
+  --color-muted: 55 65 81; /* Gray-700 */
+  --color-muted-foreground: 156 163 175; /* Gray-400 */
+
+  --color-card: 31 41 55; /* Gray-800 */
+  --color-card-foreground: 255 255 255;
+
+  --color-border: 55 65 81; /* Gray-700 */
+
+  --color-success: 34 197 94; /* Green-500 */
+  --color-warning: 234 179 8; /* Yellow-500 */
+  --color-danger: 239 68 68; /* Red-500 */
+  --color-info: 59 130 246; /* Blue-500 */
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;   */
+  }
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: rgb(var(--color-background));
+  }
+  .text-foreground {
+    color: rgb(var(--color-foreground));
+  }
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+  .text-primary {
+    color: rgb(var(--color-primary));
+  }
+  .bg-primary-foreground {
+    background-color: rgb(var(--color-primary-foreground));
+  }
+  .text-primary-foreground {
+    color: rgb(var(--color-primary-foreground));
+  }
+  .bg-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+  .text-secondary {
+    color: rgb(var(--color-secondary));
+  }
+  .bg-secondary-foreground {
+    background-color: rgb(var(--color-secondary-foreground));
+  }
+  .text-secondary-foreground {
+    color: rgb(var(--color-secondary-foreground));
+  }
+  .bg-muted {
+    background-color: rgb(var(--color-muted));
+  }
+  .text-muted {
+    color: rgb(var(--color-muted));
+  }
+  .bg-muted-foreground {
+    background-color: rgb(var(--color-muted-foreground));
+  }
+  .text-muted-foreground {
+    color: rgb(var(--color-muted-foreground));
+  }
+  .text-ico-secondary {
+    color: var(--ico-text-secondary);
+}
+  .border-border {
+    border-color: rgb(var(--color-border));
+  }
+  .bg-ico-background {
+    background-color: var(--ico-background);
+  }
+}
+
+/* Transitions */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-primary));
+}
+
+.main-bg{
+  background-color:var(--main-bg);
+}
+.bg-ico-card {
+  background-color: var(--ico-card);
+}
+
+/* This ensures the wallet connection pop-up appears on top of all other content. */
+#WEB3_CONNECT_MODAL_ID {
+  z-index: 99999 !important;
+}
+.force-behind {
+  z-index: -1;
+}
+
+/* Force the Web3 Wallet Modal to use a standard system font */
+#WEB3_CONNECT_MODAL_ID {
+  /* This font stack uses common fonts available on nearly all devices */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+
+/* 1. Main card highlight (now controlled from inside ProjectCard.vue) */
+.sponsored-highlight {
+  background-color: var(--sponsored-highlight-bg, #121318);
+  box-shadow: 0 0 16px 2px rgba(135, 206, 250, 0.25); /* Light blue shadow */
+}
+
+
+/* 2. Style for the new "Sponsored" tag */
+.sponsored-tag {
+  /* CHANGED: Use solid color instead of rgba for better contrast */
+  background-color: #3b82f6;
+  /* CHANGED: Use black text because white text on bright blue fails WCAG AA */
+  color: #000000;
+  padding: 2px 6px; /* Adjusted padding slightly for readability */
+  border-radius: 4px; /* Slightly reduced radius for a cleaner look */
+  font-size: 9px; /* Increased font size slightly (8px is often too small for accessible reading) */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

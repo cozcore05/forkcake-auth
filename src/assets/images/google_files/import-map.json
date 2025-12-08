@@ -1,0 +1,38 @@
+{
+  "imports": {
+    "@kucoin-base/main": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/main.127996e9.chunk.js",
+    "@kucoin-base/history": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/history.d623f38d.chunk.js",
+    "@kucoin-base/storage": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/storage.1feba098.chunk.js",
+    "@kucoin-base/kcStorage": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/kcStorage.a96e7dd0.chunk.js",
+    "@kucoin-base/dva": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/dva.7d6efa65.chunk.js",
+    "@kucoin-base/fetch": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/fetch.b8cfc04c.chunk.js",
+    "@kucoin-base/i18n": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/i18n.b96dcfa1.chunk.js",
+    "@kucoin-base/report": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/report.5a9dde7f.chunk.js",
+    "@kucoin-base/bridge": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/bridge.43195654.chunk.js",
+    "@kucoin-base/sensors": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/sensors.97fff552.chunk.js",
+    "@kucoin-base/kunlun": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/kunlun.113f3c50.chunk.js",
+    "@kucoin-base/runtime": "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/runtime.657ad96f.chunk.js"
+  },
+  "depcache": {
+    "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/main.127996e9.chunk.js": [
+      "https://assets.staticimg.com/natasha/npm/react@17.0.2/umd/react.production.min.js",
+      "https://assets.staticimg.com/natasha/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+      "https://assets.staticimg.com/natasha/npm/react-router-dom@5.3.4/umd/react-router-dom.min.js",
+      "https://assets.staticimg.com/natasha/npm/react-redux@8.0.5/dist/react-redux.min.js",
+      "https://assets.staticimg.com/natasha/npm/connected-react-router@6.9.3/umd/ConnectedReactRouter.min.js",
+      "https://assets.staticimg.com/natasha/npm/@emotion/react@11.4.1/dist/emotion-react.umd.min.js",
+      "https://assets.staticimg.com/natasha/npm/@emotion/styled@11.3.0/dist/emotion-styled.umd.min.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/history.d623f38d.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/storage.1feba098.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/kcStorage.a96e7dd0.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/dva.7d6efa65.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/fetch.b8cfc04c.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/i18n.b96dcfa1.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/report.5a9dde7f.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/bridge.43195654.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/sensors.97fff552.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/kunlun.113f3c50.chunk.js",
+      "https://assets.staticimg.com/kucoin-base-web/0.4.48/js/runtime.657ad96f.chunk.js"
+    ]
+  }
+}
