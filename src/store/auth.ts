@@ -194,7 +194,7 @@ export const useAuthStore = defineStore("auth", {
         return responseData;
       } catch (error: any) {
         this.error = error.response?.data?.message || error.message || "Wallet login failed";
-        toast.error(this.error || "An unknown error occurred");
+        toast.error(this.error || "Wallet login failed");
         throw error;
       } finally {
         this.loading = false;
