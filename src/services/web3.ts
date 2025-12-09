@@ -9,7 +9,7 @@ const projectId = '99a4cd7c0be178dc88a4df50eceb7dd6';
 const metadata = {
   name: 'ICO Platform',
   description: 'ICO Platform Wallet Connection',
-  url: import.meta.env.VITE_DAPP_URL,
+  url: typeof window !== 'undefined' ? window.location.origin : 'https://auth.forkcake.com',
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 };
 
