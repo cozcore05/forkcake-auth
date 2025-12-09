@@ -1335,9 +1335,9 @@ const handle2FASubmit = async (code: string) => {
     // ✅ FIX: Cast to any. This forces TS to accept it.
 await authStore.verifyTwoFactor((twoFactorToken.value as any), code);
   } catch (error: any) {
-    twoFactorError.value =
-      error.response?.data?.message || "Verification failed.";
-    toast.error(twoFactorError.value);
+
+     const local_error= error.response?.data?.message || "Verification failed.";
+    toast.error(local_error);
   } finally {
     isLoading.value = false;
   }

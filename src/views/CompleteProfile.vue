@@ -190,8 +190,8 @@ await authStore.verifyTwoFactor((verificationToken.value as any), code);
     // router.push(authStore.isAdmin ? "/admin" : "/");
 
   } catch (error: any) {
-    twoFactorError.value = error.response?.data?.message || 'Verification failed.';
-    toast.error(twoFactorError.value);
+    const local_error = error.response?.data?.message || 'Verification failed.';
+    toast.error(local_error);
   } finally {
     isLoading.value = false;
   }

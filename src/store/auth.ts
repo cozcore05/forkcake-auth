@@ -194,7 +194,7 @@ export const useAuthStore = defineStore("auth", {
         return responseData;
       } catch (error: any) {
         this.error = error.response?.data?.message || error.message || "Wallet login failed";
-        toast.error(this.error);
+        toast.error(this.error || "An unknown error occurred");
         throw error;
       } finally {
         this.loading = false;
@@ -223,8 +223,8 @@ export const useAuthStore = defineStore("auth", {
         }
         return responseData;
       } catch (error: any) {
-        this.error = error.response?.data?.message || "Profile completion failed";
-        toast.error(this.error);
+        const local_error = error.response?.data?.message || "Profile completion failed";
+        toast.error(local_error);
         throw error;
       } finally {
         this.loading = false;
