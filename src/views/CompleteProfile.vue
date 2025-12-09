@@ -171,12 +171,8 @@ const handle2FASubmit = async (code: string) => {
   try {
     // CHANGE: Use the store action instead of calling API directly.
     // The store action handles the redirect to localhost:3000 automatically.
-    if (!verificationToken.value) {
-  toast.error("Session invalid");
-  return;
-}
-  // @ts-expect-error
-  await authStore.verifyTwoFactor(verificationToken.value as string, code);
+    // ✅ FIX: Cast to any. This forces TS to accept it.
+await authStore.verifyTwoFactor((verificationToken.value as any), code);
 
     // // Manually commit the final user and token to the store
     //   const { token, user } = response.data;

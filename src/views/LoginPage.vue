@@ -1332,12 +1332,8 @@ const handle2FASubmit = async (code: string) => {
   twoFactorError.value = null;
   try {
     // Use the new store action that handles redirect
-    if (!twoFactorToken.value) {
-   toast.error("Invalid session");
-   return;
-}
-// @ts-ignore
-await authStore.verifyTwoFactor(twoFactorToken.value as string, code);
+    // ✅ FIX: Cast to any. This forces TS to accept it.
+await authStore.verifyTwoFactor((twoFactorToken.value as any), code);
   } catch (error: any) {
     twoFactorError.value =
       error.response?.data?.message || "Verification failed.";

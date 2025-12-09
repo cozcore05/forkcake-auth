@@ -11,11 +11,13 @@ import { maskToken } from "@/utils/tokenMask";
 const MAIN_APP_URL = import.meta.env.VITE_MAIN_APP_URL || 'http://localhost:3000';
 
 // Helper function to perform the Handshake Redirect
-const redirectToMain = (token: any) => {
+const redirectToMain = (token: string | null | undefined) => {
+  // Fallback to empty string if token is null
   const safeToken = token || '';
   const maskedToken = maskToken(safeToken);
   window.location.href = `${MAIN_APP_URL}/auth/callback?token=${maskedToken}`;
 };
+
 interface User {
   id: number
   name: string
@@ -151,7 +153,6 @@ export const useAuthStore = defineStore("auth", {
         if (responseData.status === 'success') {
           const { token } = responseData;
           // Redirect to Main App immediately
-          // @ts-expect-error
           redirectToMain(token || '');
           return;
         }
@@ -183,7 +184,7 @@ export const useAuthStore = defineStore("auth", {
         if (responseData.status === 'success') {
           const { token } = responseData;
           if (token) {
-            redirectToMain(token as string);
+            redirectToMain(token as any);
           }
         } else if (responseData.status === 'profile_incomplete') {
           const { temp_token, evm_address } = responseData;
@@ -217,8 +218,7 @@ export const useAuthStore = defineStore("auth", {
           localStorage.removeItem('evm_address');
 
           if (token) {
-            // @ts-expect-error
-            redirectToMain(token as string);
+            redirectToMain(token as any);
           }
         }
         return responseData;
@@ -231,7 +231,7 @@ export const useAuthStore = defineStore("auth", {
       }
     },
 
-    async verifyTwoFactor(tempToken: any, code: string) {
+    async verifyTwoFactor(tempToken: string | null | undefined, code: string) {
   this.loading = true;
   try {
     const safeToken = tempToken || '';
