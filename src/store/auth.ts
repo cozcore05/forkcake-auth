@@ -154,7 +154,7 @@ export const useAuthStore = defineStore("auth", {
           const { token } = responseData;
           // Redirect to Main App immediately
           redirectToMain(token || '');
-          return;
+          return responseData;
         }
 
         // IMPORTANT: Return the whole response data so the login page can handle the 2FA step.

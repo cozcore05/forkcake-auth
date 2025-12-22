@@ -1,12 +1,14 @@
 <template>
   <div :class="{ dark: themeStore.isDarkMode }" class="min-h-screen bg-ico-background text-ico-text font-sans transition-colors duration-300">
     <router-view />
+    <ToastContainer />
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, watch } from "vue"; // <--- ADDED 'watch'
 import { useThemeStore } from "@/store/theme";
+import ToastContainer from "@/components/ToastContainer.vue";
 
 const themeStore = useThemeStore();
 

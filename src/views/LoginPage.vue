@@ -1283,46 +1283,69 @@ function getSignupPasswordStrengthTextClass() {
 
 // Login handler
 const handleLogin = async () => {
+  // 1. Local Validation
+  validateEmail();
+  validatePassword();
+  if (!isFormValid.value) return;
+
+  // 2. Start Loading
+  isLoading.value = true;
+  errorMessage.value = "";
+  successMessage.value = "";
+
   try {
-    validateEmail();
-    validatePassword();
-    if (!isFormValid.value) return;
-
-    isLoading.value = true;
-    errorMessage.value = "";
-    successMessage.value = "";
-
-    // The login action now returns the API response
+    // 3. Call Store Action
     const response = await authStore.login(email.value, password.value);
-    console.log("Login response:", response);
-    if (response.status === "2fa_required") {
-      // 2FA is needed. Show the modal.
+
+    // 4. Handle 2FA Required
+    if (response && response.status === "2fa_required") {
       twoFactorToken.value = response.temp_token;
       show2FAModal.value = true;
-      isLoading.value = false; // Stop the button spinner
-    } else if (response.status === "success") {
-      // Direct login success
-      // toast.success(t("login.loginSuccess"));
-      // setTimeout(() => {
-      //   router.push(authStore.isAdmin ? "/admin" : "/");
-      // }, 1500);
-    }else if(response.error){
-      // Handle other statuses if needed
+      isLoading.value = false;
+      return;
+    }
 
-      toast.error(response.error);
+    // 5. Success Logic
+    if (response && response.status === "success") {
+      // The store handles the redirect.
+      // If success toast works for you, leave your existing success logic here.
+      successMessage.value = t("login.loginSuccess") || "Login successful!";
+      toast.success(successMessage.value);
+    } else {
+      // Handle cases where the server returns 200 OK but with a failure status
+      isLoading.value = false;
+      const msg = response?.message || response?.error || t("login.loginFailed") || "Invalid credentials";
+      errorMessage.value = msg;
+      toast.error(msg);
     }
   } catch (error: any) {
-    const responseData = error.response?.data;
-    const displayMsg =
-      responseData?.message ||
-      responseData?.error ||
-      responseData?.errors?.email?.[0] ||
-      t("login.loginFailed");
-
-    errorMessage.value = displayMsg;
-    toast.error(errorMessage.value);
-  } finally {
+    // 1. Reset loading so the button is clickable again
     isLoading.value = false;
+
+    // 2. Extract the message more reliably
+    const responseData = error.response?.data;
+    let displayMsg = t("login.loginFailed") || "Login failed";
+
+    if (responseData) {
+      // Check for Laravel validation errors first
+      if (responseData.errors) {
+        displayMsg = Object.values(responseData.errors).flat()[0] as string;
+      } else {
+        displayMsg = responseData.message || responseData.error || displayMsg;
+      }
+    } else if (error.message) {
+      displayMsg = error.message;
+    }
+
+    // 3. Show the toast immediately without complex conditions
+    // (We only ignore if the error is explicitly a browser navigation cancellation)
+    if (error.code !== "ERR_CANCELED" && error.message !== "canceled") {
+      errorMessage.value = displayMsg;
+      toast.error(displayMsg);
+    }
+
+    // 4. Clear password for security
+    password.value = "";
   }
 };
 
