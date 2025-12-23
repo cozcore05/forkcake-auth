@@ -1381,7 +1381,7 @@ const handleSignup = async () => {
     signupSuccessMessage.value = "";
 
     // Use the auth store to register
-    const response = await authStore.register({
+    await authStore.register({
       name: signupForm.value.name,
       email: signupForm.value.email,
       password: signupForm.value.password,
@@ -1389,7 +1389,7 @@ const handleSignup = async () => {
     });
 
     // Success
-    // toast.success(t("signup.signupSuccess"));
+    toast.success(t("signup.signupSuccess") || "Signup successful! Please verify your email.");
 
     // Redirect after successful signup
     // setTimeout(() => {
@@ -1401,6 +1401,21 @@ const handleSignup = async () => {
     //     router.push("/");
     //   }
     // }, 1500);
+
+    // ✅ FIX 2: Better UX - Switch to Login Tab automatically
+    // This shows the user "Okay, you're registered. Now go Verify -> Login."
+    setTimeout(() => {
+       activeTab.value = 'credentials'; // Switches the view to the Login form
+
+       // Optional: Clear the signup form so it's clean if they come back
+       signupForm.value = {
+         name: "",
+         email: "",
+         password: "",
+         confirmPassword: "",
+         agreeToTerms: false
+       };
+    }, 1500);
   } catch (error: any) {
     if (error.response?.data?.errors) {
       // Handle validation errors

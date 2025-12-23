@@ -262,10 +262,10 @@ export const useAuthStore = defineStore("auth", {
         const response = await api.register(userData)
 
         // Store token and user data
-        const { token, user } = response.data
+        // const { token, user } = response.data
 
-        // Success -> Redirect to Main App
-        redirectToMain(token);
+        // // Success -> Redirect to Main App
+        // redirectToMain(token);
         return response.data;
 
         // Fetch profile data after registration
